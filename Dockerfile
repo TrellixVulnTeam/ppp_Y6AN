@@ -33,6 +33,6 @@ RUN npm install && npm install qrcode-terminal && npm install pm2 -g
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 100
 
 CMD ["node . --db "mongodb+srv://Ikhsan65:ApKERpsNe7yWlQIJ@cluster0.srrh1.mongodb.net/?retryWrites=true&w=majority" --autocleartmp --restrict"]

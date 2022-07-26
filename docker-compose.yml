@@ -1,6 +1,6 @@
 version: "3.9"  # optional since v1.27.0
 services:
-  web:
+  web: node . --db "mongodb+srv://Ikhsan65:ApKERpsNe7yWlQIJ@cluster0.srrh1.mongodb.net/?retryWrites=true&w=majority" --autocleartmp --restrict
     build: .
     ports:
       - "8000:5000"

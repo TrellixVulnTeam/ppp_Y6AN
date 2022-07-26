@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 FROM node:lts-buster
 
 RUN apt-get update && \
@@ -16,4 +35,4 @@ COPY . .
 
 EXPOSE 5000
 
-RUN node . --db "mongodb+srv://Ikhsan65:ApKERpsNe7yWlQIJ@cluster0.srrh1.mongodb.net/?retryWrites=true&w=majority" --autocleartmp --restrict
+CMD ["node . --db "mongodb+srv://Ikhsan65:ApKERpsNe7yWlQIJ@cluster0.srrh1.mongodb.net/?retryWrites=true&w=majority" --autocleartmp --restrict"]
